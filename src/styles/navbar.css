@@ -1,0 +1,27 @@
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #1a1a28; /* slightly lighter than slate */
+  border-bottom: 1px solid var(--border);
+}
+
+.main-nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.main-nav a:hover {
+  color: var(--text-primary);
+}
+
+.main-nav a.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--success);
+}

@@ -1,0 +1,112 @@
+.wishlist-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.wishlist-page h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  border-left: 4px solid var(--success);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-stock-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-stock-form input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  background: #2a2a3a;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.add-stock-form input:focus {
+  outline: none;
+  border-color: var(--success);
+}
+
+.add-stock-form button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--success);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-stock-form button:hover {
+  background: #3d9c45;
+}
+
+.wishlist-table {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  padding: 1rem 1.5rem;
+  background: #1a1a28;
+  color: var(--text-secondary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row .symbol {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.table-row .price {
+  color: var(--text-secondary);
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: var(--danger);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.remove-btn:hover {
+  transform: scale(1.1);
+}
+
+.empty-message {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
